@@ -38,6 +38,8 @@ request(options, function (error, response, body) {
 res.send("result--->"+body);
   
     // result = body
+   } else {
+      res.send("result---> Tally server is not running")
    }
 });
 // async.parallel([
@@ -84,7 +86,7 @@ router.get('/creategroup',(req, res)=>{
     ' <TALLYMESSAGE xmlns:UDF="TallyUDF">'+
     ' <GROUP NAME=" Group from Kryptos" ACTION="Create">'+
     ' <NAME.LIST>'+ 
-    ' <NAME> Group from Arunkrishna XML </NAME>'+
+    ' <NAME> Group from Arunkrishna5 XML </NAME>'+
     ' </NAME.LIST>'+
     ' <PARENT>Sundry Debtors</PARENT>'+
     ' <ISSUBLEDGER>No</ISSUBLEDGER>'+
